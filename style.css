@@ -56,7 +56,7 @@ h1, h2, h3, .brand{
 
 
 a{ color: var(--text); }
-.container{ max-width: 980px; margin: 0 auto; padding: 0 18px; }
+.container{ max-width: 900px; margin: 0 auto; padding: 0 18px; }
 
 /* 
 .topbar{
