@@ -1,6 +1,5 @@
-
 /* :root{
-  --bg: #f7f5f1;                  /* soft warm ivory */
+  --bg: #f7f5f1;
   --card: rgba(255,255,255,0.68);
   --text: rgba(28,28,28,0.86);
   --muted: rgba(28,28,28,0.52);
@@ -18,23 +17,14 @@
 }
 
 *{ box-sizing: border-box; }
-html,body{ margin:0; padding:0; }
-/* body{
-  font-family: "Plus Jakarta Sans", "Noto Sans SC", ui-sans-serif, system-ui, -apple-system,
-               "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background:
-    radial-gradient(1200px 800px at 18% 0%, rgba(0,0,0,0.06), transparent 62%),
-    radial-gradient(1000px 700px at 88% 12%, rgba(0,0,0,0.04), transparent 60%),
-    linear-gradient(180deg, rgba(255,255,255,0.80), rgba(255,255,255,0) 45%),
-    var(--bg);
-  color: var(--text);
-} */
+
+html,body{
+  margin:0;
+  padding:0;
+}
 
 body{
-  font-family: "Plus Jakarta Sans", "Noto Sans SC", ui-sans-serif, system-ui, -apple-system,
+  font-family: "Manrope", "Noto Sans SC", ui-sans-serif, system-ui, -apple-system,
                "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -48,25 +38,19 @@ body{
 }
 
 h1, h2, h3, .brand{
-  font-family: "Plus Jakarta Sans", "Noto Sans SC", sans-serif;
+  font-family: "Manrope", "Noto Sans SC", sans-serif;
   letter-spacing: -0.02em;
 }
 
+a{
+  color: var(--text);
+}
 
-
-
-a{ color: var(--text); }
-.container{ max-width: 900px; margin: 0 auto; padding: 0 18px; }
-
-/* 
-.topbar{
-  position: sticky; top: 0;
-  background: rgba(250,248,244,0.78);
-  backdrop-filter: blur(14px);
-  border-bottom: 1px solid rgba(120,110,100,0.12);
-  z-index: 10;
-} */
-
+.container{
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 18px;
+}
 
 .topbar{
   position: sticky;
@@ -80,11 +64,26 @@ a{ color: var(--text); }
 
 .topbar-inner{
   height: 58px;
-  display:flex; align-items:center; justify-content:space-between;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
 }
-.brand{ font-weight: 650; text-decoration:none; letter-spacing: 0.2px; }
-.nav a{ margin-left: 16px; text-decoration:none; color: var(--muted); }
-.nav a:hover{ color: var(--text); }
+
+.brand{
+  font-weight: 650;
+  text-decoration:none;
+  letter-spacing: 0.2px;
+}
+
+.nav a{
+  margin-left: 16px;
+  text-decoration:none;
+  color: var(--muted);
+}
+
+.nav a:hover{
+  color: var(--text);
+}
 
 .hero{
   display:grid;
@@ -93,13 +92,19 @@ a{ color: var(--text); }
   padding: 34px 0 10px;
   align-items: center;
 }
-h1{ margin: 0 0 10px; font-size: 40px; line-height:1.15; }
+
+h1{
+  margin: 0 0 10px;
+  font-size: 40px;
+  line-height:1.15;
+}
+
 .subtitle{
   margin: 0 0 18px;
-  color: #000;                 /* ✅ 黑色 */
-  font-size: 18px;             /* ✅ 变大：你也可以 22px */
-  line-height: 1.45;           /* ✅ */
-  max-width: 62ch;             /* 可选：更好读 */
+  color: #000;
+  font-size: 18px;
+  line-height: 1.45;
+  max-width: 52ch;
 }
 
 .name-cn{
@@ -111,40 +116,36 @@ h1{ margin: 0 0 10px; font-size: 40px; line-height:1.15; }
   top: 0.06em;
 }
 
-
-
-/* 你可以改成你喜欢的紫色 */
 .nyu{
-  color: #a855f7;   /* NYU 紫（常用） */
-  font-weight: 700; /* 可选：让它也更醒目 */
+  color: #7c3aed;
+  font-weight: 700;
 }
 
 .snu{
-  color: #000;      /* 黑色 */
-  font-weight: 700; /* 加粗 */
+  color: #000;
+  font-weight: 700;
 }
 
 .strong{
-  font-weight: 700; /* 加粗 */
+  font-weight: 700;
 }
 
+.meta{
+  margin-top: 10px;
+  color: var(--muted);
+  display:flex;
+  gap: 14px;
+  flex-wrap:wrap;
+}
 
-.meta{ margin-top: 10px; color: var(--muted); display:flex; gap: 14px; flex-wrap:wrap; }
 .meta .icon{
-  color: var(--text);   /* ✅ 符号用正常颜色（不灰） */
+  color: var(--text);
 }
 
-.meta a{ text-decoration:none; border-bottom: 1px dashed var(--border); }
-
-/* .avatar{
-  width: 220px;
-  height: auto;
-  object-fit: contain;
-  border-radius: 22px;
-  border: 1px solid var(--border);
-  box-shadow: 0 18px 50px rgba(0,0,0,0.15);
-  justify-self: end;
-} */
+.meta a{
+  text-decoration:none;
+  border-bottom: 1px dashed var(--border);
+}
 
 .avatar{
   width: 190px;
@@ -158,21 +159,18 @@ h1{ margin: 0 0 10px; font-size: 40px; line-height:1.15; }
   justify-self: end;
 }
 
+.section{
+  padding: 26px 0;
+}
 
-
-.section{ padding: 26px 0; }
-.section h2{ margin: 0 0 12px; font-size: 22px; }
-
-/* .card{
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 18px;
-  padding: 16px;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
-} */
+.section h2{
+  margin: 0 0 12px;
+  font-size: 22px;
+}
 
 .card{
+  width: 100%;
+  max-width: 900px;
   background: linear-gradient(
     180deg,
     rgba(255,255,255,0.78),
@@ -187,74 +185,93 @@ h1{ margin: 0 0 10px; font-size: 40px; line-height:1.15; }
     inset 0 1px 0 rgba(255,255,255,0.70);
 }
 
-
-
 .grid{
   display:grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 14px;
 }
-/* 三张图在 card 内水平均匀分布 */
+
 .gallery{
   display: flex;
   align-items: center;
-  justify-content: center; /* ✅ 更均匀稳定 */
+  justify-content: center;
   gap: 14px;
 }
 
-/* 每张占同等宽度 */
 .shot{
   margin: 0;
-  flex: 1;                       /* ✅ 三等分 */
+  flex: 1;
   display: flex;
-  justify-content: center;        /* ✅ 图片在自己那一格里居中 */
+  justify-content: center;
   border: 0;
   background: transparent;
 }
 
-/* 保持原比例，尽量放大但不裁切 */
 .shot img{
   max-width: 100%;
-  max-height: 230px;             /* ✅ 你可调 200~260 */
+  max-height: 230px;
   width: auto;
   height: auto;
   display: block;
-  border-radius: 14px;           /* 可选：不想圆角就删掉 */
+  border-radius: 14px;
 }
 
-/* 小屏自动换行更舒服 */
 @media (max-width: 860px){
   .gallery{
     flex-wrap: wrap;
     justify-content: center;
   }
+
   .shot{
-    flex: 1 1 260px;             /* 一行最多两张/一张 */
+    flex: 1 1 260px;
   }
 }
 
+h3{
+  margin: 0 0 6px;
+  font-size: 18px;
+}
 
+.muted{
+  color: var(--muted);
+  margin: 6px 0 10px;
+}
 
-h3{ margin: 0 0 6px; font-size: 18px; }
-.muted{ color: var(--muted); margin: 6px 0 10px; }
-.small{ font-size: 13px; }
-.bullets{ margin: 10px 0 0; padding-left: 18px; color: var(--text); }
-.bullets li{ margin: 6px 0; color: var(--muted); }
-.bullets b{ color: var(--text); }
+.small{
+  font-size: 13px;
+}
 
-.news{ margin: 0; padding-left: 18px; color: var(--muted); }
-.news li{ margin: 10px 0; }
+.bullets{
+  margin: 10px 0 0;
+  padding-left: 18px;
+  color: var(--text);
+}
+
+.bullets li{
+  margin: 6px 0;
+  color: var(--muted);
+}
+
+.bullets b{
+  color: var(--text);
+}
+
+.news{
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
+}
+
+.news li{
+  margin: 10px 0;
+}
+
 .date{
   display:inline-block;
   min-width: 78px;
   color: var(--text);
   font-weight: 600;
 }
-
-
-
-
-
 
 .footer{
   padding: 22px 0 30px;
@@ -264,12 +281,24 @@ h3{ margin: 0 0 6px; font-size: 18px; }
 }
 
 @media (max-width: 860px){
-  .hero{ grid-template-columns: 1fr; }
-  .avatar{ justify-self: start; width: 180px; height: auto; }
-  .grid{ grid-template-columns: 1fr; }
-  h1{ font-size: 34px; }
-}
+  .hero{
+    grid-template-columns: 1fr;
+  }
 
+  .avatar{
+    justify-self: start;
+    width: 180px;
+    height: auto;
+  }
+
+  .grid{
+    grid-template-columns: 1fr;
+  }
+
+  h1{
+    font-size: 34px;
+  }
+}
 
 /* ===== Projects: full-width rows with left thumbnail ===== */
 .projects-list{
@@ -278,19 +307,16 @@ h3{ margin: 0 0 6px; font-size: 18px; }
   gap: 14px;
 }
 
-/* Make each project card flatter (roughly half-height of typical cards) */
 .project-card{
   display: flex;
   gap: 14px;
   padding: 12px 14px;
-  align-items: center;   /* ✅ 竖直居中 */
+  align-items: center;
 }
 
-
-/* Left thumbnail */
 .project-thumb{
-  flex: 0 0 160px;         /* thumbnail column width */
-  height: 110px;           /* control overall card height */
+  flex: 0 0 160px;
+  height: 110px;
   border-radius: 14px;
   overflow: hidden;
   border: 1px solid var(--border);
@@ -300,11 +326,10 @@ h3{ margin: 0 0 6px; font-size: 18px; }
 .project-thumb img{
   width: 100%;
   height: 100%;
-  object-fit: cover;       /* keeps it neat */
+  object-fit: cover;
   display: block;
 }
 
-/* Placeholder style when no image yet */
 .project-thumb.placeholder{
   display: grid;
   place-items: center;
@@ -312,7 +337,6 @@ h3{ margin: 0 0 6px; font-size: 18px; }
   font-size: 14px;
 }
 
-/* Right content */
 .project-body{
   flex: 1;
   min-width: 0;
@@ -339,7 +363,6 @@ h3{ margin: 0 0 6px; font-size: 18px; }
   white-space: nowrap;
 }
 
-/* More compact bullets for flatter cards */
 .bullets.compact{
   margin-top: 6px;
   margin-bottom: 0;
@@ -350,20 +373,19 @@ h3{ margin: 0 0 6px; font-size: 18px; }
   margin: 2px 0;
 }
 
-/* Mobile: stack image above text */
 @media (max-width: 720px){
   .project-card{
     flex-direction: column;
   }
+
   .project-thumb{
     flex-basis: auto;
     width: 100%;
     height: 140px;
   }
+
   .project-head{
     flex-direction: column;
     align-items: flex-start;
   }
 }
-
-
