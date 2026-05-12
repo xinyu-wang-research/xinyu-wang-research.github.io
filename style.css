@@ -131,6 +131,11 @@ h1{
   font-weight: 700;
 }
 
+.highlight{
+  color: #5b5fc7;
+  font-weight: 500;
+}
+
 .meta{
   margin-top: 10px;
   color: var(--muted);
