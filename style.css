@@ -1,10 +1,3 @@
-/* :root{
-  --bg: #fbfbfc;                  /* Fog White 底色 */
-  --card: rgba(255,255,255,0.72); /* 玻璃卡片更干净 */
-  --text: rgba(0,0,0,0.88);
-  --muted: rgba(0,0,0,0.60);
-  --border: rgba(0,0,0,0.10);     /* 统一灰边框（别用紫了） */
-} */
 
 :root{
   --bg: #f7f5f1;                  /* soft warm ivory */
@@ -41,13 +34,6 @@ h1, h2, h3, .brand{
 a{ color: var(--text); }
 .container{ max-width: 980px; margin: 0 auto; padding: 0 18px; }
 
-/* .topbar{
-  position: sticky; top: 0;
-  background: rgba(255,255,255,0.82);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--border);
-  z-index: 10;
-} */
 
 .topbar{
   position: sticky; top: 0;
@@ -117,15 +103,13 @@ h1{ margin: 0 0 10px; font-size: 40px; line-height:1.15; }
 
 .avatar{
   width: 220px;
-  height: 236px; 
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
   border-radius: 22px;
   border: 1px solid var(--border);
   box-shadow: 0 18px 50px rgba(0,0,0,0.15);
   justify-self: end;
-  /* filter: brightness(1.12); */
 }
-
 
 
 .section{ padding: 26px 0; }
@@ -217,7 +201,7 @@ h3{ margin: 0 0 6px; font-size: 18px; }
 
 @media (max-width: 860px){
   .hero{ grid-template-columns: 1fr; }
-  .avatar{ justify-self: start; width: 180px; height: 180px; }
+  .avatar{ justify-self: start; width: 180px; height: auto; }
   .grid{ grid-template-columns: 1fr; }
   h1{ font-size: 34px; }
 }
