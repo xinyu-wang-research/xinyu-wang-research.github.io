@@ -70,15 +70,17 @@ a{
 }
 
 .brand{
-  font-weight: 650;
-  text-decoration:none;
+  font-weight: 700;
+  text-decoration: none;
   letter-spacing: 0.2px;
+  color: #000;
 }
 
 .nav a{
   margin-left: 16px;
-  text-decoration:none;
-  color: var(--text);
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
 }
 
 .nav a:hover{
@@ -177,6 +179,16 @@ h1{
   margin: 0 0 12px;
   font-size: 22px;
   padding-left: 36px;
+  color: #000;
+  font-weight: 700;
+}
+
+.personal-intro{
+  max-width: 700px;
+  margin: 0 auto 14px;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.55;
 }
 
 .card{
