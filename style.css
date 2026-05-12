@@ -118,7 +118,7 @@ h1{
 }
 
 .nyu{
-  color: #7c3aed;
+  color: var(--text);
   font-weight: 700;
 }
 
