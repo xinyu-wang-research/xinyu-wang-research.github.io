@@ -5,10 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Home</title>
   <meta name="description" content="Xinyu Wang - Research Homepage" />
-  <link rel="stylesheet" href="style.css" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet"></head>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
 <body>
   <header class="topbar">
     <div class="container topbar-inner">
@@ -37,8 +41,6 @@
           I received my B.S. in <span class="strong">Physics</span> from
           <span class="snu">Sichuan Normal University</span> in June 2024.
         </p>
-
-
 
         <div class="meta">
           <span><span class="icon">📍</span> Brooklyn, NY</span>
@@ -70,122 +72,114 @@
       </div>
     </section>
 
-
-    
-<!-- NEWS -->
-<section id="news" class="section">
-  <h2>News</h2>
-  <div class="card">
-    <ul class="news">
-      <li><span class="date">Jan 2026</span> We are revising a manuscript and preparing for submission. </li>
-      <li><span class="date">Nov 2022</span> Our team won the National Second Prize in the China Undergraduate Mathematical Contest in Modeling!</li>
-      <li><span class="date">Jul 2022</span> Our team won First Prize &amp; Best Performance at the Southwest Undergraduate Physics Tournament!</li>
-    </ul>
-  </div>
-</section>
-
-
-<!-- PROJECTS -->
-<section id="projects" class="section">
-  <h2>Projects</h2>
-
-  <div class="projects-list">
-
-    <!-- Project 1 -->
-    <article class="card project-card">
-      <div class="project-thumb">
-        <img src="assets/projects/project_01.jpg" alt="Explainable Image Aesthetic Factor Ranking thumbnail" loading="lazy">
-      </div>
-      <div class="project-body">
-        <div class="project-head">
-          <h3>Explainable Image Aesthetic Factor Ranking</h3>
-          <span class="project-tag">2025</span>
-        </div>
-        <p class="muted">
-          Predicts 10-bin human rating distributions (1–10) from interpretable, editing-aligned visual factors, and ranks factor importance via ablation. Frames the model as explainable representation learning for lightweight human response modeling.
-        </p>
-      </div>
-    </article>
-    
-    <!-- Project 2 -->
-    <article class="card project-card">
-      <div class="project-thumb">
-        <img src="assets/projects/project_02.jpg" alt="Real-Time Music-Driven Visual Modulation thumbnail" loading="lazy">
-      </div>
-      <div class="project-body">
-        <div class="project-head">
-          <h3>Real-Time Music-Driven Visual Modulation on Static Image</h3>
-          <span class="project-tag">2025</span>
-        </div>
-        <p class="muted">
-          A low-latency audio-to-visual system that translates music dynamics into smooth visual effects, to improve perceived immersion and engagement. It links real-time audio features to visual control parameters through a calibrated, smoothed mapping.
-        </p>
-      </div>
-    </article>
-
-    
-    <!-- Project 3 -->
-    <article class="card project-card">
-      <div class="project-thumb">
-        <img src="assets/projects/project_03.jpg" alt="Optimal Modulation of Interleukin-8 thumbnail" loading="lazy">
-      </div>
-      <div class="project-body">
-        <div class="project-head">
-          <h3>Optimal Modulation of Interleukin-8 During Surgery Using Repertaxin</h3>
-          <span class="project-tag">2025</span>
-        </div>
-        <p class="muted">
-          Modeled and controlled intraoperative inflammation by optimizing Repertaxin dosing with state estimation.
-        </p>
-        <ul class="bullets compact">
-          <li>Built a state-space model + feedback controller to modulate IL-8 levels during surgery.</li>
-          <li>Designed a Kalman filter estimator and personalized dosing policy; validated on 12-hour, 10-patient cardiac-surgery IL-8 time series in MATLAB/Simulink.</li>
+    <!-- NEWS -->
+    <section id="news" class="section">
+      <h2>News</h2>
+      <div class="card">
+        <ul class="news">
+          <li><span class="date">Jan 2026</span> We are revising a manuscript and preparing for submission.</li>
+          <li><span class="date">Nov 2022</span> Our team won the National Second Prize in the China Undergraduate Mathematical Contest in Modeling!</li>
+          <li><span class="date">Jul 2022</span> Our team won First Prize &amp; Best Performance at the Southwest Undergraduate Physics Tournament!</li>
         </ul>
       </div>
-    </article>
-    
-    <!-- Project 4 -->
-    <article class="card project-card">
-      <div class="project-thumb">
-        <img src="assets/projects/project_04.jpg" alt="Perovskite Solar Cells Active Learning thumbnail" loading="lazy">
-      </div>
-      <div class="project-body">
-        <div class="project-head">
-          <h3>Accelerating the Design of Perovskite Solar Cells Using Active Learning</h3>
-          <span class="project-tag">2023</span>
-        </div>
-        <p class="muted">
-          Used machine learning + active learning ideas to accelerate perovskite material design through predictive modeling. Built and tuned models (e.g., SVM/XGBoost) and used data-driven iteration to guide material design decisions.
-        </p>
-      </div>
-    </article>
+    </section>
 
-    <!-- Project 5 -->
-    <article class="card project-card">
-      <div class="project-thumb placeholder">
-        <img src="assets/projects/project_05.jpg" alt="Balls on an Elastic Band thumbnail" loading="lazy">
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+
+      <div class="projects-list">
+        <!-- Project 1 -->
+        <article class="card project-card">
+          <div class="project-thumb">
+            <img src="assets/projects/project_01.jpg" alt="Explainable Image Aesthetic Factor Ranking thumbnail" loading="lazy">
+          </div>
+          <div class="project-body">
+            <div class="project-head">
+              <h3>Explainable Image Aesthetic Factor Ranking</h3>
+              <span class="project-tag">2025</span>
+            </div>
+            <p class="muted">
+              Predicts 10-bin human rating distributions (1–10) from interpretable, editing-aligned visual factors, and ranks factor importance via ablation. Frames the model as explainable representation learning for lightweight human response modeling.
+            </p>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="card project-card">
+          <div class="project-thumb">
+            <img src="assets/projects/project_02.jpg" alt="Real-Time Music-Driven Visual Modulation thumbnail" loading="lazy">
+          </div>
+          <div class="project-body">
+            <div class="project-head">
+              <h3>Real-Time Music-Driven Visual Modulation on Static Image</h3>
+              <span class="project-tag">2025</span>
+            </div>
+            <p class="muted">
+              A low-latency audio-to-visual system that translates music dynamics into smooth visual effects, to improve perceived immersion and engagement. It links real-time audio features to visual control parameters through a calibrated, smoothed mapping.
+            </p>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="card project-card">
+          <div class="project-thumb">
+            <img src="assets/projects/project_03.jpg" alt="Optimal Modulation of Interleukin-8 thumbnail" loading="lazy">
+          </div>
+          <div class="project-body">
+            <div class="project-head">
+              <h3>Optimal Modulation of Interleukin-8 During Surgery Using Repertaxin</h3>
+              <span class="project-tag">2025</span>
+            </div>
+            <p class="muted">
+              Modeled and controlled intraoperative inflammation by optimizing Repertaxin dosing with state estimation.
+            </p>
+            <ul class="bullets compact">
+              <li>Built a state-space model + feedback controller to modulate IL-8 levels during surgery.</li>
+              <li>Designed a Kalman filter estimator and personalized dosing policy; validated on 12-hour, 10-patient cardiac-surgery IL-8 time series in MATLAB/Simulink.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="card project-card">
+          <div class="project-thumb">
+            <img src="assets/projects/project_04.jpg" alt="Perovskite Solar Cells Active Learning thumbnail" loading="lazy">
+          </div>
+          <div class="project-body">
+            <div class="project-head">
+              <h3>Accelerating the Design of Perovskite Solar Cells Using Active Learning</h3>
+              <span class="project-tag">2023</span>
+            </div>
+            <p class="muted">
+              Used machine learning + active learning ideas to accelerate perovskite material design through predictive modeling. Built and tuned models (e.g., SVM/XGBoost) and used data-driven iteration to guide material design decisions.
+            </p>
+          </div>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="card project-card">
+          <div class="project-thumb placeholder">
+            <img src="assets/projects/project_05.jpg" alt="Balls on an Elastic Band thumbnail" loading="lazy">
+          </div>
+          <div class="project-body">
+            <div class="project-head">
+              <h3>Balls on an Elastic Band</h3>
+              <span class="project-tag">2022</span>
+            </div>
+            <p class="muted">
+              Investigated two ball-on-rubber-band phenomena (including equipotential-line behavior) via experimental design, modeling, and analysis.
+            </p>
+          </div>
+        </article>
       </div>
-      <div class="project-body">
-        <div class="project-head">
-          <h3>Balls on an Elastic Band</h3>
-          <span class="project-tag">2022</span>
-        </div>
-        <p class="muted">
-          Investigated two ball-on-rubber-band phenomena (including equipotential-line behavior) via experimental design, modeling, and analysis.
-        </p>
-      </div>
-    </article>
+    </section>
 
-
-  </div>
-</section>
-
-       <!-- PERSONAL -->
+    <!-- PERSONAL -->
     <section id="personal" class="section">
       <h2>Personal</h2>
       <div class="card">
         <div class="gallery">
-          <!-- 你把图片放到 assets/personal/ 里，然后改文件名 -->
           <figure class="shot">
             <img src="assets/personal/hike_03.jpeg" alt="Hiking photo 1" loading="lazy">
           </figure>
@@ -212,4 +206,3 @@
   </script>
 </body>
 </html>
-
