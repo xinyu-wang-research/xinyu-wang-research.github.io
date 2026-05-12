@@ -1,11 +1,18 @@
-:root{
+/* :root{
   --bg: #fbfbfc;                  /* Fog White 底色 */
   --card: rgba(255,255,255,0.72); /* 玻璃卡片更干净 */
   --text: rgba(0,0,0,0.88);
   --muted: rgba(0,0,0,0.60);
   --border: rgba(0,0,0,0.10);     /* 统一灰边框（别用紫了） */
-}
+} */
 
+:root{
+  --bg: #f7f5f1;                  /* soft warm ivory */
+  --card: rgba(255,255,255,0.68);
+  --text: rgba(28,28,28,0.86);
+  --muted: rgba(28,28,28,0.52);
+  --border: rgba(120,110,100,0.14);
+}
 
 *{ box-sizing: border-box; }
 html,body{ margin:0; padding:0; }
@@ -34,13 +41,22 @@ h1, h2, h3, .brand{
 a{ color: var(--text); }
 .container{ max-width: 980px; margin: 0 auto; padding: 0 18px; }
 
-.topbar{
+/* .topbar{
   position: sticky; top: 0;
   background: rgba(255,255,255,0.82);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
   z-index: 10;
+} */
+
+.topbar{
+  position: sticky; top: 0;
+  background: rgba(250,248,244,0.78);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(120,110,100,0.12);
+  z-index: 10;
 }
+
 .topbar-inner{
   height: 58px;
   display:flex; align-items:center; justify-content:space-between;
