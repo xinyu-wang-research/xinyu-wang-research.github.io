@@ -7,13 +7,13 @@
 } */
 
 :root{
-  --bg: #f6f1ea;
+  --bg: #f4f2ec;
   --card: rgba(255,255,255,0.66);
-  --text: rgba(24,22,20,0.88);
-  --muted: rgba(24,22,20,0.56);
-  --border: rgba(120,100,85,0.16);
-  --accent: #8b5cf6;
-  --accent-soft: rgba(139,92,246,0.14);
+  --text: rgba(24,24,22,0.88);
+  --muted: rgba(24,24,22,0.56);
+  --border: rgba(105,115,95,0.16);
+  --accent: #6f8f72;
+  --accent-soft: rgba(111,143,114,0.14);
 }
 
 *{ box-sizing: border-box; }
@@ -24,21 +24,21 @@ html,body{
 }
 
 body{
-  font-family: "Manrope", "Noto Sans SC", ui-sans-serif, system-ui, -apple-system,
+  font-family: "Instrument Sans", "Noto Sans SC", ui-sans-serif, system-ui, -apple-system,
                "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background:
-    radial-gradient(900px 520px at 12% 4%, rgba(139,92,246,0.15), transparent 62%),
-    radial-gradient(760px 460px at 86% 8%, rgba(244,170,120,0.16), transparent 60%),
-    radial-gradient(700px 500px at 50% 100%, rgba(120,160,255,0.10), transparent 65%),
-    linear-gradient(180deg, #fbf8f3 0%, var(--bg) 52%, #f3eee7 100%);
+background:
+  radial-gradient(900px 520px at 12% 4%, rgba(111,143,114,0.14), transparent 62%),
+  radial-gradient(760px 460px at 86% 8%, rgba(210,185,145,0.15), transparent 60%),
+  radial-gradient(700px 500px at 50% 100%, rgba(155,180,165,0.10), transparent 65%),
+  linear-gradient(180deg, #fbf9f4 0%, var(--bg) 52%, #eeeae1 100%);
   color: var(--text);
 }
 
 h1, h2, h3, .brand{
-  font-family: "Manrope", "Noto Sans SC", sans-serif;
+  font-family: "Instrument Sans", "Noto Sans SC", sans-serif;
   letter-spacing: -0.02em;
 }
 
@@ -90,6 +90,7 @@ a{
   grid-template-columns: 1.6fr 0.8fr;
   gap: 26px;
   padding: 34px 0 10px;
+  padding-left: 36px;
   align-items: center;
 }
 
@@ -166,6 +167,7 @@ h1{
 .section h2{
   margin: 0 0 12px;
   font-size: 22px;
+  padding-left: 36px;
 }
 
 .card{
@@ -285,12 +287,17 @@ h3{
 @media (max-width: 860px){
   .hero{
     grid-template-columns: 1fr;
+    padding-left: 0;
   }
 
   .avatar{
     justify-self: start;
     width: 180px;
     height: auto;
+  }
+
+  .section h2{
+    padding-left: 0;
   }
 
   .grid{
