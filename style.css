@@ -29,11 +29,11 @@ body{
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-background:
-  radial-gradient(900px 520px at 12% 4%, rgba(196,154,108,0.14), transparent 62%),
-  radial-gradient(760px 460px at 86% 8%, rgba(230,205,165,0.18), transparent 60%),
-  radial-gradient(700px 500px at 50% 100%, rgba(190,160,120,0.08), transparent 65%),
-  linear-gradient(180deg, #fffaf4 0%, var(--bg) 52%, #f0e6d8 100%);
+  background:
+    radial-gradient(900px 520px at 12% 4%, rgba(196,154,108,0.14), transparent 62%),
+    radial-gradient(760px 460px at 86% 8%, rgba(230,205,165,0.18), transparent 60%),
+    radial-gradient(700px 500px at 50% 100%, rgba(190,160,120,0.08), transparent 65%),
+    linear-gradient(180deg, #fffaf4 0%, var(--bg) 52%, #f0e6d8 100%);
   color: var(--text);
 }
 
@@ -86,12 +86,12 @@ a{
 }
 
 .hero{
-  display:grid;
-  grid-template-columns: 1.6fr 0.8fr;
-  gap: 26px;
   padding: 34px 0 10px;
   padding-left: 36px;
-  align-items: center;
+}
+
+.hero-content{
+  max-width: 760px;
 }
 
 h1{
@@ -105,7 +105,7 @@ h1{
   color: #000;
   font-size: 18px;
   line-height: 1.45;
-  max-width: 52ch;
+  max-width: none;
 }
 
 .name-cn{
@@ -149,7 +149,8 @@ h1{
 }
 
 .avatar{
-  width: 175px;
+  float: right;
+  width: 165px;
   height: auto;
   object-fit: contain;
   border-radius: 26px;
@@ -157,7 +158,8 @@ h1{
   box-shadow:
     0 24px 60px rgba(70,50,35,0.16),
     0 0 0 8px rgba(255,255,255,0.38);
-  justify-self: end;
+  margin-left: 28px;
+  margin-bottom: 18px;
 }
 
 .section{
@@ -286,14 +288,19 @@ h3{
 
 @media (max-width: 860px){
   .hero{
-    grid-template-columns: 1fr;
     padding-left: 0;
   }
 
+  .hero-content{
+    max-width: 100%;
+  }
+
   .avatar{
-    justify-self: start;
+    float: none;
+    display: block;
     width: 150px;
     height: auto;
+    margin: 0 0 22px 0;
   }
 
   .section h2{
