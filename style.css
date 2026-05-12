@@ -185,7 +185,8 @@ h1{
 
 .personal-intro{
   max-width: 700px;
-  margin: 0 auto 14px;
+  margin: 0 0 14px;
+  padding-left: 36px;
   color: var(--muted);
   font-size: 16px;
   line-height: 1.55;
@@ -306,9 +307,10 @@ h3{
 }
 
 @media (max-width: 860px){
-  .hero{
+  .personal-intro{
     padding-left: 0;
   }
+}
 
   .hero-content{
     max-width: 100%;
