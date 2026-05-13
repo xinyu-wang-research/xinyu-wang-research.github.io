@@ -430,4 +430,13 @@ h3{
     flex-direction: column;
     align-items: flex-start;
   }
+  .project-card .project-head h3{
+  font-size: 14px;
+}
+
+.project-card .muted{
+  font-size: 14px;
+  line-height: 1.45;
+}
+
 }
