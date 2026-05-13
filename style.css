@@ -356,12 +356,12 @@ h3{
   align-items: center;
 }
   .project-card .project-head h3{
-  font-size: 14px;
+  font-size: 16px;
   color: #000;
 }
 
 .project-card .muted{
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.45;
 }
 .project-thumb{
