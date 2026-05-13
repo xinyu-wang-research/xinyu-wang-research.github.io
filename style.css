@@ -225,8 +225,9 @@ h1{
 }
 
 .personal-gallery{
-  max-width: 700px;
+  max-width: 600px;
   margin: 0 auto;
+  gap: 8px;
 }
 
 .shot{
