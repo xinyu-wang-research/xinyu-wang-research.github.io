@@ -366,6 +366,7 @@ h3{
 }
 
 .project-status{
+  font-size: inherit;
   font-weight: 600;
   color: rgba(26,25,23,0.78);
 }
