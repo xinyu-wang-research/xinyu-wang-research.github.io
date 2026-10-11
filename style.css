@@ -96,7 +96,7 @@ a{
 
 .hero-content {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 180px;
+  grid-template-columns: minmax(0, 1fr) 175px;
   column-gap: 14px;
   align-items: start;
 }
@@ -183,7 +183,7 @@ h1{
 
 .avatar {
   float: none;
-  width: 180px;
+  width: 175px;
   height: auto;
   object-fit: contain;
   border-radius: 26px;
