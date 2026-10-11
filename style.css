@@ -313,16 +313,18 @@ h3 { margin: 0 0 6px; font-size: clamp(16px, 1.8vw, 18px); }
   color: rgba(26,25,23,0.78);
 }
 
-.project-thumb {
-  flex: 0 0 clamp(115px, 16vw, 160px);
-  height: clamp(80px, 11vw, 110px);
-  border-radius: clamp(10px, 1.4vw, 14px);
+.project-thumb{
+  flex: 0 0 160px;
+  width: 160px;
+  aspect-ratio: 16 / 11;
+  height: auto;
+  border-radius: 14px;
   overflow: hidden;
   border: 1px solid var(--border);
   background: rgba(0,0,0,0.02);
 }
 
-.project-thumb img {
+.project-thumb img{
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -372,14 +374,23 @@ h3 { margin: 0 0 6px; font-size: clamp(16px, 1.8vw, 18px); }
 }
 
 /* Preserve the original project-card switch at 720px. */
-@media (max-width: 720px) {
-  .project-card { flex-direction: column; align-items: stretch; }
-  .project-thumb {
+@media (max-width: 720px){
+  .project-card{
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .project-thumb{
     flex-basis: auto;
     width: 100%;
-    height: clamp(120px, 20vw, 140px);
+    aspect-ratio: 16 / 11;
+    height: auto;
   }
-  .project-head { flex-direction: column; align-items: flex-start; }
+
+  .project-head{
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 /* Only narrow phones switch Hero from two columns to one. */
