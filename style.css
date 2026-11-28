@@ -282,6 +282,38 @@ h3 { margin: 0 0 6px; font-size: clamp(16px, 1.8vw, 18px); }
   font-size: clamp(12px, 1.4vw, 14px);
 }
 
+/* Publications */
+.publication {
+  padding: 4px 0;
+}
+
+.publication h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 0 0 6px;
+}
+
+.publication-authors,
+.publication-venue {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 3px 0;
+}
+
+.publication-authors strong {
+  font-weight: 600;
+}
+
+.publication-venue {
+  opacity: 0.85;
+}
+
+.publication-venue a {
+  margin-left: 8px;
+  font-weight: 500;
+}
+
 /* ===== Projects ===== */
 .projects-list {
   display: flex;
