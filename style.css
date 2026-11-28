@@ -325,7 +325,7 @@ h3 { margin: 0 0 6px; font-size: clamp(16px, 1.8vw, 18px); }
   margin: 0 0 3px;
   font-size: clamp(13px, 1.5vw, 15px);
   line-height: 1.45;
-  color: rgba(26,25,23,0.70);
+  color: #000;
 }
 
 .publication-authors strong {
@@ -348,8 +348,8 @@ h3 { margin: 0 0 6px; font-size: clamp(16px, 1.8vw, 18px); }
 }
 
 .publication-link {
-  color: #9254b8;
-  font-weight: 500;
+  color: var(--text);
+  font-weight: 400;
   text-decoration: none;
 }
 
