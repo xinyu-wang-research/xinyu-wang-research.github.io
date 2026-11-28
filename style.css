@@ -577,5 +577,62 @@ h3 { margin: 0 0 6px; font-size: clamp(16px, 1.8vw, 18px); }
     font-size: 14px;
     line-height: 1.45;
   }
+
+/* ===== Refined Typography ===== */
+
+/* Name */
+h1 {
+  font-size: clamp(30px, 3.8vw, 38px);
 }
+
+/* Personal introduction */
+.subtitle {
+  font-size: clamp(15px, 1.6vw, 16px);
+  line-height: 1.45;
+}
+
+/* Email and contact information */
+.meta {
+  font-size: clamp(13px, 1.4vw, 14px);
+}
+
+/* Navigation */
+.brand,
+.nav a {
+  font-size: clamp(13px, 1.5vw, 15px);
+}
+
+/* Publication details */
+.publication-authors,
+.publication-meta {
+  font-size: clamp(13px, 1.4vw, 14px);
+}
+
+/* Personal interests */
+.personal-intro {
+  font-size: clamp(14px, 1.5vw, 15px);
+  line-height: 1.5;
+}
+
+/* Footer */
+.footer {
+  font-size: clamp(12px, 1.3vw, 13px);
+}
+
+/* Mobile readability */
+@media (max-width: 600px) {
+  h1 {
+    font-size: clamp(28px, 7vw, 34px);
+  }
+
+  .subtitle {
+    font-size: 15px;
+  }
+
+  .personal-intro {
+    font-size: 14px;
+  }
+}
+
+
 
