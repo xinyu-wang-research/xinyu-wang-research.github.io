@@ -301,19 +301,24 @@ h3 { margin: 0 0 6px; font-size: clamp(16px, 1.8vw, 18px); }
 .publication {
   padding: 2px 0 2px 14px;
   border: none;
-  border-left: 2px solid var(--accent);
+  border-left: 2px solid #c9c5be;
   background: transparent;
   border-radius: 0;
   box-shadow: none;
 }
 
+/* Unified publication and project titles */
+.publication .publication-title,
+.project-card .project-head h3 {
+  font-size: clamp(14px, 1.6vw, 16px);
+  font-weight: 700;
+  line-height: 1.45;
+  letter-spacing: -0.02em;
+  color: #000;
+}
+
 .publication .publication-title {
   margin: 0 0 5px;
-  font-size: clamp(14px, 1.6vw, 16px);
-  font-weight: 600;
-  line-height: 1.45;
-  letter-spacing: normal;
-  color: var(--text);
 }
 
 .publication-authors {
@@ -367,10 +372,6 @@ h3 { margin: 0 0 6px; font-size: clamp(16px, 1.8vw, 18px); }
   max-width: var(--project-width);
 }
 
-.project-card .project-head h3 {
-  font-size: clamp(14px, 1.6vw, 16px);
-  color: #000;
-}
 
 .project-card .muted {
   font-size: clamp(13px, 1.6vw, 16px);
@@ -483,7 +484,10 @@ h3 { margin: 0 0 6px; font-size: clamp(16px, 1.8vw, 18px); }
   h1 { font-size: clamp(28px, 7vw, 34px); }
   .subtitle { font-size: clamp(15px, 3.8vw, 17px); }
   .section h2 { font-size: clamp(19px, 5vw, 22px); }
-  .project-card .project-head h3 { font-size: 16px; }
+  .publication .publication-title,
+  .project-card .project-head h3 {
+    font-size: 16px;
+  }
   .project-card .muted { font-size: 15px; }
   .project-tag { font-size: 12px; }
 }
