@@ -577,7 +577,7 @@ h3 { margin: 0 0 6px; font-size: clamp(16px, 1.8vw, 18px); }
     font-size: 14px;
     line-height: 1.45;
   }
-
+}
 /* ===== Refined Typography ===== */
 
 /* Name */
@@ -632,6 +632,7 @@ h1 {
   .personal-intro {
     font-size: 14px;
   }
+}
 /* ===== Refined Heading Sizes ===== */
 
 h1 {
