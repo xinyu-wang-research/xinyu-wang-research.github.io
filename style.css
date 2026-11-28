@@ -216,7 +216,7 @@ h1 {
            clamp(10px, 1.4vw, 14px);
 
   backdrop-filter: none;
-  box-shadow: none;
+  box-shadow: 0 2px 8px rgba(26,25,23,0.055);
 }
 
 .grid {
