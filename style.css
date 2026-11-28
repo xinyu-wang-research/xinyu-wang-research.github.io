@@ -495,7 +495,7 @@ h3 { margin: 0 0 6px; font-size: clamp(16px, 1.8vw, 18px); }
 
 /* Smaller profile photo */
 :root {
-  --photo-width: clamp(110px, 15vw, 150px);
+  --photo-width: clamp(115px, 16vw, 160px);
 }
 
 /* Hero spacing */
@@ -631,6 +631,35 @@ h1 {
 
   .personal-intro {
     font-size: 14px;
+  }
+/* ===== Refined Heading Sizes ===== */
+
+h1 {
+  font-size: clamp(28px, 3.2vw, 32px);
+}
+
+.section h2 {
+  font-size: clamp(18px, 2vw, 20px);
+}
+
+.publication .publication-title,
+.project-card .project-head h3 {
+  font-size: clamp(14px, 1.5vw, 15px);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  h1 {
+    font-size: clamp(26px, 6vw, 30px);
+  }
+
+  .section h2 {
+    font-size: 19px;
+  }
+
+  .publication .publication-title,
+  .project-card .project-head h3 {
+    font-size: 15px;
   }
 }
 
