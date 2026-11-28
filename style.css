@@ -285,12 +285,13 @@ h3 { margin: 0 0 6px; font-size: clamp(16px, 1.8vw, 18px); }
 /* ===== Publications ===== */
 
 #publications {
-  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 4px;
 }
 
 .publications-list {
   width: 100%;
-  max-width: var(--hero-width);
+  max-width: var(--project-width);
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -298,19 +299,20 @@ h3 { margin: 0 0 6px; font-size: clamp(16px, 1.8vw, 18px); }
 }
 
 .publication {
-  padding: 0;
-  background: transparent;
+  padding: 2px 0 2px 14px;
   border: none;
+  border-left: 2px solid var(--accent);
+  background: transparent;
   border-radius: 0;
   box-shadow: none;
 }
 
 .publication .publication-title {
-  margin: 0 0 4px;
+  margin: 0 0 5px;
   font-size: clamp(14px, 1.6vw, 16px);
   font-weight: 600;
   line-height: 1.45;
-  letter-spacing: -0.01em;
+  letter-spacing: normal;
   color: var(--text);
 }
 
@@ -318,7 +320,7 @@ h3 { margin: 0 0 6px; font-size: clamp(16px, 1.8vw, 18px); }
   margin: 0 0 3px;
   font-size: clamp(13px, 1.5vw, 15px);
   line-height: 1.45;
-  color: var(--text);
+  color: rgba(26,25,23,0.70);
 }
 
 .publication-authors strong {
@@ -337,7 +339,7 @@ h3 { margin: 0 0 6px; font-size: clamp(16px, 1.8vw, 18px); }
 
 .publication-venue {
   color: var(--muted);
-  font-style: normal;
+  font-style: italic;
 }
 
 .publication-link {
