@@ -489,3 +489,93 @@ h3 { margin: 0 0 6px; font-size: clamp(16px, 1.8vw, 18px); }
   .project-card .muted { font-size: 15px; }
   .project-tag { font-size: 12px; }
 }
+
+
+/* ===== Compact Layout ===== */
+
+/* Smaller profile photo */
+:root {
+  --photo-width: clamp(110px, 15vw, 150px);
+}
+
+/* Hero spacing */
+.hero {
+  padding: clamp(18px, 2.6vw, 26px) 0 6px;
+}
+
+.subtitle {
+  margin-bottom: clamp(8px, 1.2vw, 12px);
+}
+
+.meta {
+  margin-top: 7px;
+}
+
+/* Section spacing */
+.section {
+  padding: clamp(12px, 1.6vw, 16px) 0;
+}
+
+.section h2 {
+  margin-bottom: 9px;
+}
+
+#publications {
+  padding-top: 14px;
+  padding-bottom: 4px;
+}
+
+/* Publication card spacing */
+.publication {
+  padding: clamp(10px, 1.2vw, 12px)
+           clamp(10px, 1.4vw, 14px);
+}
+
+/* Project card spacing */
+.projects-list {
+  gap: 10px;
+}
+
+.project-card {
+  gap: 12px;
+  padding: 10px 12px;
+}
+
+/* Smaller project thumbnails */
+.project-thumb {
+  flex: 0 0 140px;
+  width: 140px;
+}
+
+/* Project body typography */
+.project-card .muted {
+  font-size: clamp(13px, 1.5vw, 15px);
+  line-height: 1.4;
+  margin: 3px 0 2px;
+}
+
+.project-head {
+  margin-bottom: 3px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 720px) {
+  .project-thumb {
+    flex: none;
+    width: 100%;
+    max-width: 140px;
+  }
+}
+
+@media (max-width: 600px) {
+  .avatar {
+    width: clamp(110px, 32vw, 135px);
+    margin-bottom: 14px;
+  }
+
+  .project-card .muted {
+    font-size: 14px;
+    line-height: 1.45;
+  }
+}
+
