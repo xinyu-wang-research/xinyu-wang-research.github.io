@@ -660,7 +660,7 @@ h1 {
 /* ===== Overall Desktop Scale ===== */
 @media (min-width: 1000px) {
   body {
-    zoom: 1.07;
+    zoom: 1.05;
   }
 }
 
