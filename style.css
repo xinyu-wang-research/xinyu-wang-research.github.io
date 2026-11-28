@@ -495,7 +495,7 @@ h3 { margin: 0 0 6px; font-size: clamp(16px, 1.8vw, 18px); }
 
 /* Smaller profile photo */
 :root {
-  --photo-width: clamp(115px, 16vw, 160px);
+--photo-width: clamp(115px, 16.5vw, 170px);
 }
 
 /* Hero spacing */
