@@ -295,14 +295,15 @@ h3 { margin: 0 0 6px; font-size: clamp(16px, 1.8vw, 18px); }
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 12px;
 }
 
 .publication {
-  padding: 2px 0 2px 14px;
+  padding: clamp(12px, 1.6vw, 16px)
+           clamp(10px, 1.4vw, 14px);
+  background: rgba(255,255,255,0.48);
   border: none;
-  background: transparent;
-  border-radius: 0;
+  border-radius: clamp(18px, 2.4vw, 24px);
   box-shadow: none;
 }
 
@@ -317,13 +318,13 @@ h3 { margin: 0 0 6px; font-size: clamp(16px, 1.8vw, 18px); }
 }
 
 .publication .publication-title {
-  margin: 0 0 5px;
+  margin: 0 0 6px;
 }
 
 .publication-authors {
-  margin: 0 0 3px;
+  margin: 0 0 4px;
   font-size: clamp(13px, 1.5vw, 15px);
-  line-height: 1.45;
+  line-height: 1.5;
   color: #000;
 }
 
@@ -334,11 +335,10 @@ h3 { margin: 0 0 6px; font-size: clamp(16px, 1.8vw, 18px); }
 .publication-meta {
   display: flex;
   align-items: baseline;
-  justify-content: flex-start;
   flex-wrap: wrap;
-  gap: 6px 12px;
-  font-size: clamp(12px, 1.4vw, 14px);
-  line-height: 1.4;
+  gap: 4px 10px;
+  font-size: clamp(13px, 1.5vw, 15px);
+  line-height: 1.5;
 }
 
 .publication-venue {
