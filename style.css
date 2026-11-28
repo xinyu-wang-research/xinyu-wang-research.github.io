@@ -282,36 +282,62 @@ h3 { margin: 0 0 6px; font-size: clamp(16px, 1.8vw, 18px); }
   font-size: clamp(12px, 1.4vw, 14px);
 }
 
-/* Publications */
+/* ===== Publications ===== */
+
+.publications-list {
+  width: 100%;
+  max-width: var(--project-width);
+  margin: 0 auto;
+}
+
 .publication {
-  padding: 4px 0;
+  padding: 4px clamp(10px, 1.4vw, 14px) 6px;
 }
 
-.publication h3 {
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 1.5;
+.publication .publication-title {
   margin: 0 0 6px;
+  font-size: clamp(15px, 1.8vw, 18px);
+  font-weight: 600;
+  line-height: 1.45;
+  letter-spacing: -0.01em;
+  color: #000;
 }
 
-.publication-authors,
-.publication-venue {
-  font-size: 0.9rem;
+.publication-authors {
+  margin: 0 0 4px;
+  font-size: clamp(14px, 1.6vw, 16px);
   line-height: 1.5;
-  margin: 3px 0;
+  color: var(--text);
 }
 
 .publication-authors strong {
   font-weight: 600;
 }
 
-.publication-venue {
-  opacity: 0.85;
+.publication-meta {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: clamp(13px, 1.5vw, 15px);
+  line-height: 1.5;
 }
 
-.publication-venue a {
-  margin-left: 8px;
+.publication-venue {
+  color: var(--muted);
+  font-style: italic;
+}
+
+.publication-link {
+  color: #9254b8;
   font-weight: 500;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.publication-link:hover {
+  color: #74359e;
+  text-decoration: underline;
 }
 
 /* ===== Projects ===== */
